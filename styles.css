@@ -1,0 +1,335 @@
+/* Reset */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333333; /* Dark text color */
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Light header background */
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+/* زر تسجيل الدخول والتسجيل */
+.nav-button {
+    background: linear-gradient(45deg, #007bff, #004099); /* تدرج لوني */
+    color: #ffffff;
+    padding: 12px 20px; /* زيادة حجم الزر */
+    border: none;
+    border-radius: 50px; /* حواف دائرية */
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* انتقالات */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* ظل */
+}
+
+.nav-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003366); /* لون أغمق عند التمرير */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* زيادة الظل عند التمرير */
+}
+
+/* Logo Effect */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #0056b3; /* Primary color for logo */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Scale logo by 10% */
+    text-shadow: 0 0 5px rgba(0, 86, 179, 0.5), 0 0 10px rgba(0, 86, 179, 0.3); /* Subtle glow effect */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #0056b3; /* Bright blue */
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #cfe2ff, #e2f0ff); /* Light gradient */
+    padding: 200px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #0056b3; /* Bright blue */
+}
+
+/* Packages Section */
+.packages {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.packages h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #0056b3;
+}
+
+.package {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    background-color: #e6f2ff;
+}
+
+.package h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+
+/* زر الشراء */
+.buy-button {
+    background: linear-gradient(45deg, #007bff, #004099); /* تدرج لوني للأزرار */
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003366); /* لون أغمق عند التمرير */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.faq h2 {
+    font-size: 36px;
+    color: #0056b3;
+}
+
+.faq p {
+    font-size: 20px;
+    color: #333333;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    color: #0056b3;
+    margin: 0 15px;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #004099;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+}
+
+/* Content of the modal */
+.modal-content {
+    background-color: #ffffff; /* White background for content */
+    margin: 10% auto; /* Centered */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Slightly rounded corners */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width for larger screens */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    animation: fadeIn 0.5s ease; /* Animation for opening */
+}
+
+/* Close button */
+.close {
+    color: #666; /* Lighter close button color */
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff4d4d; /* Change color to red on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styles */
+.modal form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="email"] {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.modal input[type="text"]:focus,
+.modal input[type="password"]:focus,
+.modal input[type="email"]:focus {
+    border: 1px solid #0056b3; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.modal button {
+    padding: 12px;
+    background-color: #0056b3; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* Add transition */
+}
+
+.modal button:hover {
+    background-color: #004099; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Keyframes for modal animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
