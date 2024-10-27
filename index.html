@@ -48,21 +48,19 @@
 
     <section class="faq" id="faq">
         <h2>Frequently Asked Questions</h2>
-        <p><i class="fas fa-question-circle"></i> How to purchase UC?</p>
-        <p>1. Choose a package.</p>
-        <p>2. Click on "Buy Now".</p>
-        <p>3. Follow the payment instructions.</p>
-    </section>
-
-    <footer>
-        <p>Follow us on social media:</p>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="faq-item">
+            <button class="faq-question">
+                <i class="fas fa-question-circle"></i> How to purchase UC?
+                <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+                <p>1. Choose a package.</p>
+                <p>2. Click on "Buy Now".</p>
+                <p>3. Follow the payment instructions.</p>
+            </div>
         </div>
-        <p>Payment methods: Vodafone Cash</p>
-    </footer>
+        <!-- Repeat for other questions -->
+    </section>    
 
 <!-- The Modal -->
 <div id="registerModal" class="modal">
@@ -90,6 +88,35 @@
     </div>
 </div>
 
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Store UC</h3>
+            <p>Your one-stop solution for PUBG UC charging with fast and reliable service.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Store UC | All Rights Reserved | Powered by Vodafone Cash</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>
