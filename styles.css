@@ -158,41 +158,124 @@ header nav ul li a:hover {
 /* FAQ Section */
 .faq {
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
     background-color: #f4f4f4;
 }
 
 .faq h2 {
     font-size: 36px;
     color: #0056b3;
-}
-
-.faq p {
-    font-size: 20px;
-    color: #333333;
-}
-
-/* Footer */
-footer {
-    padding: 30px;
-    background-color: #ffffff;
-    border-top: 2px solid #ddd;
     text-align: center;
 }
 
-footer p {
-    margin: 10px 0;
+.faq-item {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-size: 20px;
+    color: #0056b3;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle i {
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+.faq-question.active .faq-toggle i {
+    transform: rotate(180deg);
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 15px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
 }
 
 .social-media a {
-    color: #0056b3;
-    margin: 0 15px;
-    font-size: 26px;
-    transition: color 0.3s ease;
+    color: #ffd700;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #004099;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+    color: #e0e0e0;
 }
 
 /* Modal Styles */
