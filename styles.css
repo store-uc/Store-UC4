@@ -341,8 +341,8 @@ html {
 /* Content of the modal */
 .modal-content {
     background-color: #ffffff; /* White background for content */
-    margin: 10% auto; /* Centered */
-    padding: 30px;
+    margin: 15% auto; /* Centered */
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px; /* Slightly rounded corners */
     width: 90%; /* Responsive width */
