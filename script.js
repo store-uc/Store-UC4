@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.getElementById('loginButton');
-    const registerButton = document.getElementById('registerButton');
+    const signupButton = document.getElementById('signupButton');
     const loginModal = document.getElementById('loginModal');
-    const registerModal = document.getElementById('registerModal');
+    const signupModal = document.getElementById('signupModal');
     const closeLoginModal = document.getElementById('closeLoginModal');
-    const closeRegisterModal = document.getElementById('closeRegisterModal');
+    const closesignupModal = document.getElementById('closesignupModal');
 
     // فتح نافذة تسجيل الدخول
     loginButton.addEventListener('click', () => {
@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // فتح نافذة التسجيل
-    registerButton.addEventListener('click', () => {
-        registerModal.style.display = 'block';
+    signupButton.addEventListener('click', () => {
+        signupModal.style.display = 'block';
     });
 
     // إغلاق نافذة تسجيل الدخول
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // إغلاق نافذة التسجيل
-    closeRegisterModal.addEventListener('click', () => {
-        registerModal.style.display = 'none';
+    closesignupModal.addEventListener('click', () => {
+        signupModal.style.display = 'none';
     });
 
     // إغلاق النافذة عند النقر خارج المحتوى
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target == loginModal) {
             loginModal.style.display = 'none';
         }
-        if (event.target == registerModal) {
-            registerModal.style.display = 'none';
+        if (event.target == signupModal) {
+            signupModal.style.display = 'none';
         }
     });
 });
