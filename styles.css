@@ -438,15 +438,3 @@ html {
 .whatsapp-button:hover {
     color: #128C7E;
 }
-@media (max-width: 768px) { /* لأجهزة التابلت والجوالات */
-    header, section {
-        height: auto; /* اجعلها تلقائية لتناسب حجم الشاشة الأصغر */
-        padding: 20px;
-    }
-}
-
-@media (min-width: 1200px) { /* للأجهزة الكبيرة */
-    header, section {
-        padding: 40px;
-    }
-}
