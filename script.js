@@ -68,3 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.querySelector('form').addEventListener('submit', function (event) {
+    const email = document.querySelector('input[type="email"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+    if (!email.includes('@') || password.length < 8) {
+        event.preventDefault();
+        alert("Please enter a valid email and a password with at least 8 characters.");
+    }
+});
