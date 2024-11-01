@@ -438,3 +438,37 @@ html {
 .whatsapp-button:hover {
     color: #128C7E;
 }
+/* إعدادات خاصة للهواتف */
+@media only screen and (max-width: 768px) {
+    body, html {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* تقييد الحواف وجعل الأقسام تمتد بطول الشاشة */
+    .hero, .packages, .faq, footer {
+        padding: 20px;
+        margin: 0;
+        width: 100vw; /* عرض كامل للشاشة */
+    }
+
+    /* تكبير الخطوط والعناصر لسهولة التصفح */
+    h1, h2, p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .package {
+        width: 90vw;
+        margin: 10px auto;
+    }
+
+    .modal-content {
+        width: 90vw;
+        max-width: none;
+        margin: 10% auto;
+    }
+}
